@@ -1,0 +1,23 @@
+.social-block {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px; 
+}
+
+.hover-logo {
+  position: absolute;
+  inset: 0; 
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.16s ease-in-out;
+}
+
+.social-block:hover .hover-logo {
+  opacity: 1;
+}

@@ -1,0 +1,8 @@
+#skillBadgeContainer{
+    padding: 0.5em 1.5em;
+    /* margin-right: 1em; */
+    border-radius: 8px;
+    background-color: rgb(181, 181, 181);
+    font-weight: 600;
+    font-family:'Courier New', Courier, monospace;
+}

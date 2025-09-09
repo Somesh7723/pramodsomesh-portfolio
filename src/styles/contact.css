@@ -1,0 +1,121 @@
+#contactWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: calc(100vh - var(--header-height)); */
+    height: auto;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    color: black;
+    font-family: var(--font-family);
+    padding-top: calc(var(--header-height) + 13px);
+    background-image: url("../assets/bgimg.jpeg");
+}
+
+#contactContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+}
+
+#contactTitle{
+    font-size: var(--title-size);
+    font-weight: 700;
+}
+
+#contactSubTitle{
+    font-size: var(--subtitle-size);
+    padding: 0 0 1em 0;
+}
+
+#contactFormContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60%;
+    height: 100%;
+    padding: 1.5em 0;
+    /* box-shadow: 0px 2px 10px #6c6c6c; */
+    /* border-radius: 15px; */
+}
+
+#contactForm{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 21px;
+    padding: 1.5em 0;
+    box-shadow: 0px 2px 10px #6c6c6c;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+}
+
+.inputContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+input.inputContact{
+    width: 50%;
+    height: 3em;
+    border-radius: 10px;
+    padding: 0 1em; 
+    background-color: var(--primary-color);
+    justify-content: start;
+}
+
+label.inputLabelContact{
+    width: 53%;
+    text-align: start;
+    font-size: var(--subtitle-size);
+}
+
+#message{
+    height: 21em;
+}
+
+button#formSubmit{
+    width: 40%;
+    color: var(--primary-color);
+    padding: 1rem 2.4rem;
+    border-radius: 15px;
+    font-size: 1em;
+    transition: padding ease-in-out 0.16s, font-size ease-in-out 0.16s;
+}
+
+button#formSubmit:hover{
+    padding: 1rem 2.3rem;
+    font-size: 0.95em;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 760px){
+    #contactFormContainer{
+        width: 100%;
+        min-height: 600px;
+    }
+    #contactForm{
+        gap: 15px;
+        width: 85%;
+    }
+    input.inputContact{
+        width: 75%;
+    }
+    label.inputLabelContact{
+        width: 80%;
+    }
+    #message{
+        height: 15em;
+    }
+}

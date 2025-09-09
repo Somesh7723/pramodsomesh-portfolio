@@ -1,0 +1,109 @@
+#headerContainer{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: var(--header-height);
+    background-color: var(--primary-color);
+    color: black;
+    /* opacity: 0.75; */
+    box-shadow: 1px 1px 25px #6c6c6c;
+    z-index: 9;
+}
+
+#headerWrapper{
+    /* margin-bottom: var(--header-height); */
+    display: flex;
+    justify-content: start;
+}
+
+.hamburger,
+.hamburger-close {
+  display: none;
+}
+
+/* .show {
+  display: flex;
+} */
+.hide {
+  display: none;
+}
+
+#navLinks{
+    display: flex;
+    transform: none;
+    opacity: 1;
+}
+
+#logoContainer, #navLinks{
+    padding: 0.5rem 2.4rem;
+}
+
+
+
+#logoContainer{
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: var(--font-family);
+}
+
+.navLink{
+    padding: 0.5em 1em;
+    font-weight: 600;
+    font-size: 1.5em;
+    font-family: var(--font-family);
+    text-decoration: none;
+    color: black;
+}
+
+.navLink:hover{
+    color: var(--button-color);
+}
+
+@media screen and (max-width: 760px){
+    .hamburger.show{
+        display: flex;
+        font-size: var(--subtitle-size);
+        font-size: xx-large;
+        font-weight: 900;
+        padding: 0;
+        background-color: var(--primary-color);
+        color: black;
+        border: 0;
+        margin: 0.3rem 2.4rem;
+    }
+    .hamburger-close.show{
+        display:flex;
+        font-size: var(--subtitle-size);
+        font-weight: 700;
+        font-family: var(--font-family);
+        padding: 0;
+        background-color: var(--primary-color);
+        color: black;
+        border: 0;
+        margin: 0.3rem 2.4rem;
+    }
+    #navLinks{
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: -40%;
+        left: 0;
+        flex-direction: column;
+        height: 40vh;
+        width: 100vw;
+        z-index: 10;
+        padding: 0;
+        opacity: 0;
+        background-color: var(--primary-color);
+        transition: transform ease-in-out 0.8s, opacity ease-out 0.4s;
+    }
+    .navLink{
+        width: fit-content;
+    }
+    #navLinks.open{
+        transform: translateY(calc(40vh + var(--header-height)));
+        opacity: 1;
+    }
+}

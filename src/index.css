@@ -1,0 +1,40 @@
+:root {
+  --header-height: 89px;
+  --font-family: "Oswald", sans-serif;
+  --primary-color: rgb(249, 245, 240);
+  /* --button-color: #5100CB; */
+  --button-color: #138808;
+  --title-size: 3.4em;
+  --subtitle-size: 1.5em;
+  
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark; */
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button{
+  background-color: var(--button-color);
+  border: 0;
+}
+/* *{
+  border: 1px solid red;
+} */
