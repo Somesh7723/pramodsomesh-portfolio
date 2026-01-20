@@ -1,6 +1,6 @@
 import "../styles/aboutme.css"
 import SkillBadge from "./ui/SkillBadge";
-import resumeFile from "../../public/Resume_SomeshKolluru.pdf"
+import resumeFile from "../../public/Resume_updated_12012026.pdf"
 import profilePic from "../assets/profilePic.jpeg"
 
 const AboutMe = () => {
@@ -29,7 +29,7 @@ const AboutMe = () => {
                     </div>
                 </div>
             </div>
-            <a href={resumeFile} download="Resume_SomeshKollur" id="resumeDownload"><button id="resume">Resume</button></a>
+            <a href={resumeFile} download="Resume_PramodSomeshKolluru" id="resumeDownload"><button id="resume">Resume</button></a>
         </div>
     );
 }

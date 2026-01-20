@@ -37,7 +37,6 @@ const Projects = () => {
             <div id="projectCards">
                 {projects.map((projectItem, index) => (
                     <ProjectCard key={index} title={projectItem.title} skills={projectItem.skills} objective={projectItem.obj} url={projectItem.url} img={projectItem.img} />
-
                 ))}
             </div>
             <div id="githubRedirect">Visit my <a href="https://github.com/Somesh7723" target="_blank" id="github">github</a>  to see more of my projects!</div>

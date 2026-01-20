@@ -6,7 +6,8 @@ const Header = () => {
     return (
         <div id="headerWrapper">
             <div id="headerContainer">
-                <div id="logoContainer">SOMESH KOLLURU</div>
+                {/* <div id="logoContainer">SOMESH KOLLURU</div> */}
+                <a href="./#bannerContainer" className="navLink" id="logoContainer" onClick={() => setIsOpen(false)}>SOMESH KOLLURU</a>
 
                 {/* <input type="checkbox" id="hamburgerMenuCheckbox" />
                 <label htmlFor="hamburgerMenuCheckbox" id="hamburgerMenu" >=</label>
