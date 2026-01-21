@@ -2,6 +2,7 @@ import "../styles/aboutme.css"
 import SkillBadge from "./ui/SkillBadge";
 import resumeFile from "../../public/Resume_updated_12012026.pdf"
 import profilePic from "../assets/profilePic.jpeg"
+import profilePic2 from "../assets/profilePic2.jpeg"
 
 const AboutMe = () => {
     const skills = ["React","Node.js", "SQL", "Express.js", "MongoDB", "Pandas", "SciKit Learn", "RESTful API", "CSS"]
@@ -25,7 +26,7 @@ const AboutMe = () => {
                 </div>
                 <div id="myPic">
                     <div id="picContainer">
-                        <img src={profilePic} alt="my pic" id="profilePic" />
+                        <img src={profilePic2} alt="my pic" id="profilePic" />
                     </div>
                 </div>
             </div>
